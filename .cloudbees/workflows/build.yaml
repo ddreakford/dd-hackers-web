@@ -34,7 +34,7 @@ jobs:
             ${{ steps.RunUnitTest.outputs.CODE_COVERAGE }}
           format: MARKDOWN
   build:
-    uses: shozab-unify-examples/sn-hackers-workflows/container-build.yaml
+    uses: ddreakford/dd-hackers-workflows/container-build-publish.yaml
     vars: inherit
     secrets: inherit
     with:
