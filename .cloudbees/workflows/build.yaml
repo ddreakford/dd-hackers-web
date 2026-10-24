@@ -38,7 +38,7 @@ jobs:
     vars: inherit
     secrets: inherit
     with:
-      appName: dd-hackers-web
+      appName: hackers-web
       versionStart: "1.0"
-      repo: ddreakford/hackers-web
+      repo: ddreakford/dd-hackers-web
     needs: test
