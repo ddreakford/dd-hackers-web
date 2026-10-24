@@ -40,5 +40,5 @@ jobs:
     with:
       appName: dd-hackers-web
       versionStart: "1.0"
-      repo: ddreakford/dd-hackers-web
+      repo: ddreakford/hackers-web
     needs: test
