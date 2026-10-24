@@ -7,7 +7,7 @@ on:
       - "**"
   workflow_dispatch:
 jobs:
-  test:
+  build_test:
     outputs:
       CODE_COVERAGE: ${{ steps.RunUnitTest.outputs.CODE_COVERAGE }}
     steps:
@@ -33,7 +33,7 @@ jobs:
             ## Test code coverage
             ${{ steps.RunUnitTest.outputs.CODE_COVERAGE }}
           format: MARKDOWN
-  build:
+  container_build_publish:
     uses: ddreakford/dd-hackers-workflows/container-build-publish.yaml
     vars: inherit
     secrets: inherit
