@@ -11,7 +11,7 @@ jobs:
     outputs:
       CODE_COVERAGE: ${{ steps.RunUnitTest.outputs.CODE_COVERAGE }}
     steps:
-      - uses: cloudbees-io/checkout@v1
+      - uses: cloudbees-io/checkout@v2
         name: Get source code
       - name: Run unit tests
         id: RunUnitTest
